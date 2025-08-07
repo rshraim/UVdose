@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/rshraim/UVdose/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rshraim/UVdose/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 UVdose is an R package for the manipulation of UV data from TEMIS. TEMIS

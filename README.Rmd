@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # UVdose
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/rshraim/UVdose/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rshraim/UVdose/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 UVdose is an R package for the manipulation of UV data from TEMIS. TEMIS (Tropospheric Emission Monitoring Internet Service) is a web-based service to browse and download atmospheric satellite data products. More information about TEMIS is available on their website www.temis.nl. UVdose was built to facilitate the integration of UV data into health research. The package functions allow the estimation of daily, seasonal, and annual doses of erythemal UV and UVB based on geographical coordinates and dates. Additionally, a function to estimate a cumulative and weighted UVB dose relevant for vitamin D production in the skin is available.
