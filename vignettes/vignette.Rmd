@@ -19,11 +19,16 @@ vignette: >
 
 The following document describes a potential workflow for estimating and describing ambient UV doses using the **UVdose** package. UV data is downloaded from the TEMIS database (more details below in [2. Download UV data from TEMIS]). The examples below are based on mock sample data (e.g. cohort or clinical trial data).
 
-Install the package from CRAN (pending submission/approval).
+Install the package.
 
 
 ``` r
-#install.packages("UVdose")
+#CRAN (pending submission/approval)
+#install.packages("UVdose") 
+
+#GitHub
+#install.packages("pak")
+#pak::pak("rshraim/UVdose")
 ```
 
 Load the package.
