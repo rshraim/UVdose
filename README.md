@@ -21,12 +21,10 @@ available.
 
 ## Installation
 
-You can install the development version of UVdose from
-[GitHub](https://github.com/) with:
+Install UVdose from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("rshraim/UVdose")
+devtools::install_github("rshraim/UVdose")
 ```
 
 ## Example

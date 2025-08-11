@@ -27,8 +27,7 @@ Install the package.
 #install.packages("UVdose") 
 
 #GitHub
-#install.packages("pak")
-#pak::pak("rshraim/UVdose")
+#devtools::install_github("rshraim/UVdose")
 ```
 
 Load the package.
