@@ -20,10 +20,10 @@ temis_clim(path, uv_type, region = "europe")
 \item{climatology}{If TRUE (default) the climatology file will be downloaded. If FALSE, only year files will be downloaded. The same climatology file is used regardless of the specified year range.}
 
 \item{region}{As illustrated in the maps below, if "europe" (default), files covering Europe region will be downloaded, if "world", world files will be downloaded.
-\if{html}{Europe region coverage:\out{<div style="text-align: left">}\figure{March2025_vitD_cloudy_europe.png}{options: style="width:500px;max-width:50\%;"}\out{</div><p>}}
-\if{latex}{Europe region coverage:\out{\begin{center}}\figure{March2025_vitD_cloudy_europe.png}\out{\end{center}}}
-\if{html}{World region coverage:\out{<div style="text-align: left">}\figure{March2025_vitD_cloudy_world.png}{options: style="width:500px;max-width:50\%;"}\out{</div>}}
-\if{latex}{Europe region coverage:\out{\begin{center}}\figure{March2025_vitD_cloudy_world.png}\out{\end{center}}}}
+\if{html}{\figure{March2025_vitD_cloudy_europe.png}{options: style="width:500px;max-width:50\%;"}}
+\if{latex}{\figure{March2025_vitD_cloudy_europe.png}{}}
+\if{html}{\figure{March2025_vitD_cloudy_world.png}{options: style="width:500px;max-width:50\%;"}}
+\if{latex}{\figure{March2025_vitD_cloudy_world.png}{}}}
 
 \item{uv_type}{For temis_clim, "uve" or "uvb" for erythemal UV or vitamin D UVB, respectively.}
 }
