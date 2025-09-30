@@ -11,6 +11,7 @@
 #'       easting = c(519000, 365000),
 #'       northing = c(176000, 172000))
 #' uv_data_check(mysample)
+#' @return None, returns a message about input data validity.
 
 #' @export
 

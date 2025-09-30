@@ -8,7 +8,7 @@
 #' See <https://www.temis.nl/uvradiation/product/uvncinfo.html> for more info. Cloud-adjusted TEMIS data is available from 19-Jan-2004 onwards.
 #' @importFrom utils "download.file"
 #' @param years The range of years for which UV files will be downloaded, either an integer range or a date vector such as a date column in a dataframe. The data file for an additional year to the provided range is downloaded for non-daily UV dose calculations to account for earlier dates. For example, for the CW-D-UVB dose in [cw_uvb] a sample dated 01-02-2007 requires UV data up to 18-09-2006.
-#' @param path Directory where files will be downloaded to ("path/to/dir"). Default current directory.
+#' @param path Directory where files will be downloaded to ("path/to/dir").
 #' @param climatology If TRUE (default) the climatology file will be downloaded. If FALSE, only year files will be downloaded. The same climatology file is used regardless of the specified year range.
 #' @param region As illustrated in the maps below, if "europe" (default), files covering Europe region will be downloaded, if "world", world files will be downloaded.
 #' \if{html}{Europe region coverage:\out{<div style="text-align: left">}\figure{March2025_vitD_cloudy_europe.png}{options: style="width:500px;max-width:50\%;"}\out{</div><p>}}
@@ -18,12 +18,10 @@
 #' @param uv_type For temis_clim, "uve" or "uvb" for erythemal UV or vitamin D UVB, respectively.
 #' @return Files downloaded to specified directory.
 
-#' @name temis_download
 
-#' @rdname temis_download
 #' @export
 # vitamin D UV
-temis_uvdvc <-  function(years, path = getwd(), climatology = TRUE, region = "europe"){
+temis_uvdvc <-  function(years, path, climatology = TRUE, region = "europe"){
  if(region == "europe"){
    region_nc <- "_europe.nc"
  } else if (region == "world") {
@@ -61,10 +59,11 @@ temis_uvdvc <-  function(years, path = getwd(), climatology = TRUE, region = "eu
   message("Heads up! Do not rename files, downstream UV functions search by file name.")
 }
 
-#' @rdname temis_download
+
 #' @export
+#' @rdname temis_uvdvc
 # erythemal UV
-temis_uvdec <-  function(years, path = getwd(), climatology = TRUE, region = "europe"){
+temis_uvdec <-  function(years, path, climatology = TRUE, region = "europe"){
   if(region == "europe"){
     region_nc <- "_europe.nc"
   } else if (region == "world") {
@@ -102,9 +101,11 @@ temis_uvdec <-  function(years, path = getwd(), climatology = TRUE, region = "eu
   message("Heads up! Do not rename files, downstream UV functions search by file name.")
 }
 
-#' @rdname temis_download
+
+#' @export
+#' @rdname temis_uvdvc
 #climatology file only
-temis_clim <-  function(path = getwd(), uv_type, region = "europe"){
+temis_clim <-  function(path, uv_type, region = "europe"){
   if(region == "europe"){
     region_nc <- "_europe.nc"
   } else if (region == "world") {

@@ -11,6 +11,8 @@ uv_data_check(data)
 }
 \value{
 A message checking validity of input data
+
+None, returns a message about input data validity.
 }
 \description{
 UV dose calculation requires date, latitude, and longitude inputs.

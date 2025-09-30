@@ -7,15 +7,14 @@
 #' @param data a data frame containing OSGB coordinates
 #' @param easting a numeric vector of easting coordinates
 #' @param northing a numeric vector of northing coordinates
+#' @return A numeric vector of latitude or longitude values.
+
 #' @examples
 #' osgb <- data.frame(east = c(393000, 461000, 438000), north = c(287000, 223000, 565000))
 #' latitude(osgb, east, north)
 #' longitude(osgb, east, north)
-#' @name OSGB
-NULL
 
 
-#' @rdname OSGB
 #' @export
 latitude <- function(data, easting, northing){
 
@@ -84,8 +83,8 @@ latitude <- function(data, easting, northing){
   return(latitude)
 }
 
-#' @rdname OSGB
 #' @export
+#' @rdname latitude
 longitude <- function(data, easting, northing){
 
 
