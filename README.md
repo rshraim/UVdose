@@ -21,9 +21,13 @@ available.
 
 ## Installation
 
-Install UVdose from [GitHub](https://github.com/) with:
+Install UVdose from CRAN or [GitHub](https://github.com/)with:
 
 ``` r
+#CRAN
+install.packages("UVdose")
+
+#Github
 devtools::install_github("rshraim/UVdose")
 ```
 
