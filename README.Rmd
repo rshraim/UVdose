@@ -23,11 +23,16 @@ UVdose is an R package for the manipulation of UV data from TEMIS. TEMIS (Tropos
 
 ## Installation
 
-Install UVdose from [GitHub](https://github.com/) with:
+Install UVdose from CRAN or [GitHub](https://github.com/)with:
 
 ``` r
+#CRAN
+install.packages("UVdose")
+
+#Github
 devtools::install_github("rshraim/UVdose")
 ```
+
 
 ## Example
 
